@@ -1,26 +1,17 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Emergency Questions
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row class="large_button">
+      <!-- <ion-item> -->
+      <button ion-button block class="large_button" color="danger" (click)="pickQuestion()">Emergency Question</button>
 
-<ion-content padding>
-  <ion-content>
-    <ion-grid>
-      <ion-row>
-        <ion-item>
-          <button ion-button full (click)="pickQuestion()">Question</button>
-
-        </ion-item>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <div class="question">
-            <span>{{question}}</span>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
+      <!-- </ion-item> -->
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <div class="question">
+          <span>{{question}}</span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
